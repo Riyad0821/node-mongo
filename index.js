@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 
+const cors = require('cors');
+app.use(cors());
+
 const users = ['Asad', 'Riyad', 'Sabbir', 'Mansura', 'Fahad', 'Sumon', 'Rakib'];
 
 app.get('/', (req, res) => {
